@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "fast-rest-api-ii"
+version = "0.1.0"
+description = ""
+authors = ["AntonHran <anton.hranovskyi@gmail.com>"]
+readme = "README.md"
+packages = [{include = "fast_rest_api_ii"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.103.1"
+sqlalchemy = "^2.0.20"
+python-jose = {extras = ["cryptography"], version = "^3.3.0"}
+passlib = {extras = ["bcrypt"], version = "^1.7.4"}
+uvicorn = "^0.23.2"
+pydantic = {extras = ["email"], version = "^2.3.0"}
+alembic = "^1.12.0"
+psycopg2 = "^2.9.7"
+libgravatar = "^1.0.4"
+jinja2 = "^3.1.2"
+pydantic-extra-types = "^2.1.0"
+phonenumbers = "^8.13.20"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
